@@ -1,0 +1,126 @@
+.episodes{
+	padding: 90px 0;
+	@include respond-to(small) {
+		padding: 45px 0;
+	}
+}
+.epsTitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 95px;
+	h2{
+		@include ptSans(21, 400);
+		text-transform: uppercase;
+		width: 50%;
+	}
+	@include respond-to(small) {
+		margin-bottom: 45px;
+	}
+}
+.epsSelect{
+	width: 50%;
+	padding-left: 100px;
+	@include respond-to(small) {
+		padding-left: 50px;
+	}
+}
+.epsSelect__option{
+	a{
+		@include ptSans(14, 400);
+		text-transform: uppercase;
+		&:hover, &:focus{
+			color: $soundbyteGreen;
+		}
+	}
+}
+.epsSelect__option--active{
+	a{
+		position: relative;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background-color: $soundbyteGreen;
+			border-radius: 25%;
+		} 
+	}
+}
+.episodeList{
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	grid-column-gap: 40px;
+	grid-row-gap: 30px;
+	// @include respond-to(xlarge) {
+	// 	grid-template: 1fr 1fr / 1fr 1fr 1fr;
+	// }
+	@include respond-to(medium) {
+		grid-template: 1fr / 1fr;
+	}
+	.episode{
+		padding-left: 50px;
+		padding-top: 85px;
+		padding-right: 50px;
+		padding-bottom: 65px;
+		&:hover, &:active{
+			box-shadow: 8px 8px 3px black;
+		}
+		@include respond-to(medium) {
+		}
+	}
+	.episode--mostRecent{
+		margin-bottom: 30px;
+		// @include respond-to(xlarge) {
+		// 	margin-bottom: 0;
+		// }
+		@include respond-to(medium) {
+			margin-bottom: 0;
+		}
+	}
+
+}
+.episode--fiftyTwo, .episode--fiftyOne, .episode--fifty, .episode--fourtyNine, .episode--fourtyEight, .episode--fourtySeven{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.episode--fiftyTwo{
+	background-image: url("../assets/podcast-1.jpg");
+}
+.episode--fiftyOne{
+	background-image: url("../assets/podcast-2.jpg");
+}
+.episode--fifty{
+	background-image: url("../assets/podcast-3.jpg");
+}
+.episode--fourtyNine{
+	background-image: url("../assets/podcast-4.jpg");
+}
+.episode--fourtyEight{
+	background-image: url("../assets/podcast-5.jpg");
+}
+.episode--fourtySeven{
+	background-image: url("../assets/podcast-6.jpg");
+}
+.episodes__button{
+	margin-top: 70px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.13);
+	@include poppins(14, 600);
+	color: $soundbyteWhite;
+	text-transform: uppercase;
+	padding: 20px 0;
+	letter-spacing: 3px;
+	border: none;
+	&:hover,&:focus{
+		background-color: $soundbyteGreen;
+	}
+	@include respond-to(small) {
+		margin-top: 20px;
+	}
+}

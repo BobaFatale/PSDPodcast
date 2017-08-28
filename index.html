@@ -1,0 +1,344 @@
+<!-- Design provided by HackerYou http://hackeryou.com -->
+<!-- Coding by June Epstein http://juneepstein.com get@juneepstein.com-->
+
+<!-- To Do -->
+<!-- Musts -->
+<!-- nice to haves -->
+	<!-- functional audio player -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SOUNDBYTE - Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,600|Roboto:400,700,700i" rel="stylesheet"> 
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+	<input type="checkbox" id="hamToggle" name="toggle">
+	<nav class="hamburgerNav">
+		<label for="hamToggle" class="hamburgerNav__label"><i class="fa fa-bars" aria-hidden="true"></i><span class="scrRdrOnly">Navigation Menu</span></label>
+		<a href="#about" class="scrRdrOnly">Skip Navigation</a>
+		<ul class="navLinks">
+			<li class="navLinks__link"><a href="#">home</a></li>
+			<li class="navLinks__link"><a href="#about">about</a></li>
+			<li class="navLinks__link"><a href="#episodes">episodes</a></li>
+			<li class="navLinks__link"><a href="#">news</a></li>
+			<li class="navLinks__link"><a href="#">shop</a></li>
+			<li class="navLinks__link"><a href="#contact">contact</a></li>
+		</ul><!-- navLinks -->
+	</nav><!-- hamburgerNav -->
+	<header class="landing">
+		<nav class="navBar">
+			<div class="wrapper">
+				<div class="navBar__title">	
+					<apan class="scrRdrOnly"><h1> Soundbyte</h1></apan>
+					<img src="assets/logo.png" alt="#">
+				</div>
+				<a href="#about" class="scrRdrOnly">Skip Navigation</a>
+				<ul class="navLinks">
+					<li class="navLinks__link"><a href="#">home</a></li>
+					<li class="navLinks__link"><a href="#about">about</a></li>
+					<li class="navLinks__link"><a href="#episodes">episodes</a></li>
+					<li class="navLinks__link"><a href="#">news</a></li>
+					<li class="navLinks__link"><a href="#">shop</a></li>
+					<li class="navLinks__link"><a href="#contact">contact</a></li>
+					<li class="navLinks__link navLinks__link--button"><button type="button">donate</button></li>
+				</ul><!-- navLinks -->
+			</div><!-- wrapper -->
+		</nav><!-- navBar -->
+		<div class="wrapper">
+			<div class="splash" id="about">
+				<div class="splash__cell">
+					<div class="splashTitle">
+						<h3>A Podcast about tacos and Disney World by <span class="splashTitle--em">Drew Minns</span>.</h3>
+						<p>Live Broadcast Wednesday @ 9pm ET</p>
+					</div>
+					<ul class="socMed">
+						<li class="socMed__link socMed__link--button"><button type="button">subscribe</button></li>
+						<li class="socMed__link"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+						<li class="socMed__link"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+						<li class="socMed__link"><a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+						<li class="socMed__link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="socMed__link"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div><!-- splash__cell -->
+				<div class="splash__cell">
+					<div class="episode">
+						<div class="episode__info">
+							<h5>Season 3</h5>
+							<h5><i class="icon ion-clock"></i> 69 mins</h5>
+						</div><!-- episode__info -->
+						<div class="episode__title episode__title--main">
+							<h4>Episode 53: Artist Corner with justin</h4>
+						</div><!-- episode__title -->
+						<div class="episode__date">
+							<h5>october 11, 2015</h5>
+						</div><!-- episode__date -->
+						<div class="episode__play">
+							<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+						</div><!-- episode__play -->
+						<div class="episode__description">
+							<p>In this episode...behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+						</div><!-- episode__desciption -->
+					</div><!-- episode -->
+				</div><!-- splash__cell -->
+			</div><!-- splash -->
+		</div><!-- wrapper -->
+	</header><!-- landing -->
+	<section class="medPlayer">
+		<div class="wrapper">
+			<div class="player">
+				 <!-- <audio controls volume="0.5" class="player__audio">
+				  <source src="" type="audio/ogg">
+				  <source src="" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>  -->
+			</div><!-- player -->
+			<div class="audioPlayerMockup">
+					<div class="audioPlayerMockup__playPause">
+						<img src="assets/play.png" alt="play the episode">
+					</div>
+					<div class="audioPlayerMockup__time">
+						<p>00:00</p>
+						<div class="playerProgressBar"></div>
+						<p>--:--</p>
+					</div>
+					<div class="audioPlayerMockup__volume">
+						<img src="assets/volume.png" alt="volume control">
+					</div>
+			</div><!-- audioPlayerMockup -->
+		</div><!-- wrapper -->
+	</section><!-- medPlayer -->
+	<main class="episodes" id="episodes">
+		<div class="wrapper">
+			<div class="epsTitle">
+				<h2>Browse Episodes</h2>
+				<ul class="epsSelect">
+					<li class="epsSelect__option epsSelect__option--active"><a href="#">all</a></li>
+				</ul><!-- epsSelect -->
+			</div><!-- epsTitle -->
+			<ul class="episodeList">
+				<li class="episode episode--mostRecent episode--fiftyTwo">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 52: chipotle peppers</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fiftyTwo -->
+				<li class="episode episode--mostRecent episode--fiftyOne">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 51: space mountain vs. the teacups</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fiftyOne -->
+				<li class="episode episode--fifty">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 50: in which drew eats 10 tacos</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fifty -->
+				<li class="episode episode--fourtyNine">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 49: the time i met dug at disney world</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fourtyNine -->
+				<li class="episode episode--fourtyEight">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 48: the best tacos at disney world</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fourtyEight -->
+				<li class="episode episode--fourtySeven">
+					<div class="episode__info">
+						<h5>Season 3</h5>
+						<h5><i class="icon ion-clock"></i> 59 mins</h5>
+					</div><!-- episode__info -->
+					<div class="episode__title">
+						<h4>Episode 47: interview with a taco artist</h4>
+					</div><!-- episode__title -->
+					<div class="episode__date">
+						<h5>october 11, 2015</h5>
+					</div><!-- episode__date -->
+					<div class="episode__play">
+						<a href="#"><i class="fa fa-play" aria-hidden="true"></i> play episode</a>
+					</div><!-- episode__play -->
+				</li><!-- episode--fourtySeven -->
+			</ul><!-- episodeList -->
+			<button type="button" class="episodes__button">load more</button>
+		</div><!-- wrapper -->
+	</main><!-- episodes -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about__title">
+				<h2>about us</h2>
+			</div><!-- about__title -->
+			<ul class="profiles">
+				<li class="profile profile--odd">
+					<div class="profile__image">
+						<img src="assets/about-1.jpg" alt="a seated women with sunglasses in a red shirt, blue jeans, and a denim jacket">
+					</div><!-- profile__image -->
+					<div class="profile__info">
+						<h4>drew minns</h4>
+						<h5>designer / developer</h5>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+						<div class="profile__info--socMed">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="scrRdrOnly">facebook link</span></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span class="scrRdrOnly">twitter link</span></a>
+						</div><!-- profile__info--socMed -->
+					</div><!-- profile__info -->
+				</li><!-- profile -->
+				<li class="profile profile--even">
+					<div class="profile__image">
+						<img src="assets/about-2.jpg" alt="a seated women with sunglasses in a red shirt, blue jeans, and a denim jacket">
+					</div><!-- profile__image -->
+					<div class="profile__info">
+						<h4>vic vinegar</h4>
+						<h5>designer / developer</h5>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+						<div class="profile__info--socMed">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="scrRdrOnly">facebook link</span></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span class="scrRdrOnly">twitter link</span></a>
+						</div><!-- profile__info--socMed -->
+					</div><!-- profile__info -->
+				</li><!-- profile -->
+			</ul><!-- profiles -->
+		</div><!-- wrapper -->
+	</section><!-- about -->
+	<section class="donate">
+		<div class="wrapper">
+			<div class="donate__container">
+				<h2>support the show</h2>
+				<p>Far far away, behind the <span class="donate__container--emphasis">word mountains</span>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the <span class="donate__container--emphasis">coast of the Semantics</span>, a large language ocean. A small river named.</p>
+				<button type="button">make a donation</button>
+			</div><!-- donate__container -->
+		</div><!-- wrapper -->
+	</section><!-- donate -->
+	<footer class="footer" id="contact">
+		<div class="wrapper">
+			<ul class="footLinks">
+				<li class="footLinks__section">
+					<h3>categories</h3>
+					<ul class="linkList">
+						<li class="linkList__link"><a href="#">Season 3</a></li>
+						<li class="linkList__link"><a href="#">Season 2</a></li>
+						<li class="linkList__link"><a href="#">Season 1</a></li>
+					</ul><!-- linkList -->
+				</li><!-- footlinks__section -->
+				<li class="footLinks__section">
+					<h3>archives</h3>
+					<ul class="linkList">
+						<li class="linkList__link"><a href="#">October 2015 <span class="linkList__link--grey">(2)</span></a></li>
+						<li class="linkList__link"><a href="#">September 2015 <span class="linkList__link--grey">(3)</span></a></li>
+						<li class="linkList__link"><a href="#">August 2015 <span class="linkList__link--grey">(2)</span></a></li>
+					</ul><!-- linkList -->
+				</li><!-- footlinks__section -->
+				<li class="footLinks__section">
+					<h3>latest news</h3>
+					<ul class="newsList">
+						<li class="newsList__link"><a href="#">designing websties for all devices</a><p class="newsList__link--date">nov 4, 2015</p></li>
+						<li class="newsList__link"><a href="#">new guests announced for november</a><p class="newsList__link--date">nov 4, 2015</p></li>
+						<li class="newsList__link"><a href="#">designing websties for all devices</a><p class="newsList__link--date">nov 4, 2015</p></li>
+					</ul><!-- linkList -->
+				</li><!-- footlinks__section -->
+				<li class="footLinks__section">
+					<h3>follow us</h3>
+					<ul class="followList">
+						<li class="followList__link">
+							<div class="followList__link--id">
+								<h4>drew minns</h4>
+								<h5>designer / developer</h5>
+							</div>
+							<div class="followList__link-links">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>
+						</li><!-- followList__link -->
+						<li class="followList__link">
+							<div class="followList__link--id">
+								<h4>vic vinegar</h4>
+								<h5>designer / developer</h5>
+							</div>
+							<div class="followList__link-links">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>
+						</li><!-- followList__link -->
+					</ul><!-- followList -->
+				</li><!-- footlinks__section -->
+			</ul><!-- footLinks -->
+		</div><!-- wrapper -->
+		<nav class="footNav">
+			<img src="assets/logo-white.png" alt="The soundbyte logo">
+			<div class="footNav__links wrapper">
+				<ul class="socMed">
+					<li class="socMed__link"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+					<li class="socMed__link"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+					<li class="socMed__link"><a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+					<li class="socMed__link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li class="socMed__link"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+				<ul class="navLinks">
+					<li class="navLinks__link"><a href="#">home</a></li>
+					<li class="navLinks__link"><a href="#">about</a></li>
+					<li class="navLinks__link"><a href="#">episodes</a></li>
+					<li class="navLinks__link"><a href="#">news</a></li>
+					<li class="navLinks__link"><a href="#">shop</a></li>
+					<li class="navLinks__link"><a href="#">contact</a></li>
+				</ul><!-- navLinks -->
+			</div>
+		</nav><!-- footNav -->
+		<div class="copyright">
+			<p><i class="fa fa-copyright"></i>2015 Developed by HackerYou</p>
+		</div>
+	</footer><!-- footer -->
+</body>
+</html>

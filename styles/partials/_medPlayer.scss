@@ -1,0 +1,45 @@
+.medPlayer{
+	background-color: black;
+}
+.audioPlayerMockup{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.audioPlayerMockup__playPause, .audioPlayerMockup__volume{
+	width: 5%;
+	border-right: 1px solid #262626;
+	border-left: 1px solid #262626;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	@include respond-to(medium) {
+		width: 10%;
+	}
+}
+.audioPlayerMockup__time{
+	width: 55%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	@include respond-to(medium) {
+		width: 75%;
+	}
+	.playerProgressBar{
+		height: 3px;
+		width: 75%;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 1px;
+	}
+	p{
+		@include roboto(14, 700);
+		color: $soundbyteGreen;
+	}
+}

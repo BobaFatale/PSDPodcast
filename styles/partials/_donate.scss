@@ -1,0 +1,81 @@
+.donate{
+	position: relative;
+	background-color:#0ce682;
+	background:  -webkit-linear-gradient(10deg, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), rgba(12, 230, 130, 0.9);
+	background: -moz-linear-gradient(10deg, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), rgba(12, 230, 130, 0.9);
+	background: -o-linear-gradient(10deg, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), rgba(12, 230, 130, 0.9);
+	background: -ms-linear-gradient(10deg, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), rgba(12, 230, 130, 0.9);
+	background: linear-gradient(80deg, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%), rgba(12, 230, 130, 0.9);
+	padding: 110px 0;
+	z-index: 10;
+	&::before{
+		content: "donate";
+		color:rgba(26,23,26, 0.05);
+		font-size: 250px;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -1;
+		overflow: hidden;
+		@include respond-to(large) {
+			font-size: 200px;
+		}
+		@include respond-to(medium) {
+			font-size: 150px;
+		}
+		@include respond-to(small) {
+			font-size: 75px
+		}
+	}
+	@include respond-to(small) {
+		padding: 50px 0;
+	}
+}
+.donate__container{
+	padding: 0 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	h2{
+		@include ptSans(36, 700);
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		margin-bottom: 55px;
+	}
+	p{
+		@include roboto(24, 400);
+		line-height: 32px;
+		margin-bottom: 60px;
+	}
+	button{
+		@include poppins(14, 600);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $almostBlack;
+		background-color: $soundbyteWhite;
+		margin: 0 auto;
+		padding: 20px 30px;
+		border-radius: 500px;
+		border: 3px solid $soundbyteWhite;
+		&:hover, &:focus{
+			background-color: $soundbyteGreen;
+		}
+	}
+	@include respond-to(large) {
+		padding: 0 100px;
+	}
+	@include respond-to(medium) {
+		padding: 0;
+	}
+}
+.donate__container--emphasis{
+	@include robotoItalic(24, 700);
+}

@@ -1,0 +1,113 @@
+.about{
+	background: $soundbyteWhite;
+	padding-top: 90px;
+	padding-bottom: 150px;
+	@include respond-to(small) {
+		padding-top: 45px;
+		padding-bottom: 75px;
+	}
+}
+.about__title{
+	margin-bottom: 80px;
+	h2{
+		@include ptSans(32, 700);
+		color: $almostBlack;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	@include respond-to(small) {
+		margin-bottom: 40px;
+	}
+}
+.profile{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: top;
+	flex-wrap: wrap;
+	margin-bottom: 150px;
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+	@include respond-to(small) {
+		margin-bottom: 50px;
+	}
+}
+.profile__image{
+	width: 50%;
+	@include respond-to(small) {
+		width: 100%;
+	}
+}
+.profile__info{
+	position: relative;
+	width: 50%;
+	padding-top: 30px;
+	h4{
+		@include ptSans(48, 700);
+		text-transform: uppercase;
+		color: $soundbyteGreen;
+		letter-spacing: 3px;
+		margin-bottom: 40px;
+	}
+	h5{
+		@include roboto(17, 700);
+		text-transform: uppercase;
+		color: $almostBlack;
+		margin-bottom: 40px;
+	}
+	p{
+		@include roboto(18, 400);
+		color: rgba(26, 23, 26, 0.5607840000000001);
+		line-height: 30px;
+		margin-bottom: 40px;
+		max-width: 90%;
+	}
+	@include respond-to(small) {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+.profile__info--socMed{
+	a{
+		color: $almostBlack;
+		font-size: 2.4rem;
+		margin-right: 10px;
+		&:hover,&:focus{
+			color: $soundbyteGreen;
+		}
+	}
+}
+.profile--odd .profile__info{
+	text-align: right;
+	p{
+		margin-left: 10%;
+	}
+	&::before{
+		content: "";
+		left: 20%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 12px;
+		border-radius: 6px;
+		background-color: rgba(26, 23, 26, 0.08);
+	}
+}
+.profile--even .profile__info{
+	text-align: left;
+	order: -1;
+	&::before{
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 20%;
+		top: 0;
+		height: 12px;
+		border-radius: 6px;
+		background-color: rgba(26, 23, 26, 0.08);
+	}
+	@include respond-to(small) {
+		order: 1;
+	}
+}
